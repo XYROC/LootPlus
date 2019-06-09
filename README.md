@@ -1,1 +1,1 @@
-[![](https://jitpack.io/v/XYROC/LootPlus.svg)](https://jitpack.io/#XYROC/LootPlus)
+Jitpack:  [![](https://jitpack.io/v/XYROC/LootPlus.svg)](https://jitpack.io/#XYROC/LootPlus)
