@@ -47,7 +47,9 @@ public class LootPlus {
 		MinecraftForge.EVENT_BUS.register(new EventManager());
 		LootFile file = new LootFile(new LootEntryCustom[] { new LootEntryCustom("minecraft:chests/spawn_bonus_chest",
 				"minecraft:diamond", "lootplus:example", new RandomValueRange(1, 64), new RandomValueRange(0F), 0F) });
-		file.toFile(new File(directory + "/LootPlus/lootConfig.json"));
+		File lootFile = new File(directory + "/LootPlus/lootConfig.json");
+		if (!lootFile.exists())
+			file.toFile(lootFile);
 		LootRegistry.register(file.loot);
 	}
 
